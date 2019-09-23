@@ -41,3 +41,15 @@
 .reading-affix:last-child {
     padding-right: 0;
 }
+
+.high {
+    color: #2DB821;
+}
+
+.medium {
+    color: #FFAC30;
+}
+
+.low {
+    color: #FF213C;
+}

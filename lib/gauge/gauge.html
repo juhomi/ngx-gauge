@@ -1,5 +1,13 @@
-<div class="reading-block" #reading [style.fontSize]="size * 0.22 + 'px'" [style.lineHeight]="size + 'px'">
-    <u class="reading-affix">{{prepend}}</u>{{value | number}}<u class="reading-affix">{{append}}</u>
+<div class="reading-block" #reading [style.fontSize]="size * 0.22 + 'px'" [style.lineHeight]="55 + 'px'">
+    <u class="reading-affix">{{prepend}}</u>
+    <div [ngClass]="{
+						'high': value > 75,
+						'low' : value < 41,
+						'medium' : value < 76 && value > 40
+					}">
+    	{{value | number}}
+    </div>
+    <u class="reading-affix">{{append}}</u>
 </div>
-<div class="reading-label" [style.fontSize]="size / 13 + 'px'" [style.lineHeight]="(5 * size / 13) + size + 'px'">{{label}}</div>
+<div [ngClass]="reading-label" [style.fontSize]="size / 13 + 'px'" [style.lineHeight]="(5 * size / 13) + size + 'px'">{{label}}</div>
 <canvas #canvas [width]="size" [height]="size"></canvas>
