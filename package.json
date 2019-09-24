@@ -8,7 +8,8 @@
     "build": "npm run build:lib && ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "build:lib": "ng-packagr -p ng-package.json"
+    "build:lib": "ng-packagr -p ng-package.json",
+    "prepare": "npm run build"
   },
   "private": true,
   "dependencies": {
