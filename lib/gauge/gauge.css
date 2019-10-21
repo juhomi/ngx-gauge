@@ -44,12 +44,18 @@
 
 .high {
     color: #2DB821;
+    font-style: bold;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .medium {
     color: #FFAC30;
+    font-style: bold;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .low {
     color: #FF213C;
+    font-style: bold;
+    font-family: 'Open Sans', Arial, sans-serif;
 }

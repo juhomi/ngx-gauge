@@ -1,11 +1,11 @@
-<div class="reading-block" #reading [style.fontSize]="size * 0.22 + 'px'" [style.lineHeight]="55 + 'px'">
+<div class="reading-block" #reading [style.fontSize]="size * 0.22 + 'px'" [style.lineHeight]="48 + 'px'">
     <u class="reading-affix">{{prepend}}</u>
     <div [ngClass]="{
 						'high': value > 75,
 						'low' : value < 41,
 						'medium' : value < 76 && value > 40
 					}">
-    	{{value | number}}
+    	<b>{{value | number}}</b>
     </div>
     <u class="reading-affix">{{append}}</u>
 </div>
